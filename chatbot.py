@@ -21,7 +21,7 @@ def get_rag_chain():
     vector_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
     retriever = vector_db.as_retriever(search_kwargs={"k": 3})
 
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.2, groq_api_key=api_key)
+    llm = ChatGroq(model="qwen/qwen3.8-27b", temperature=0.2, groq_api_key=api_key)
 
     prompt = ChatPromptTemplate.from_template("""
 You are an AI assistant for BMS College of Engineering (BMSCE).

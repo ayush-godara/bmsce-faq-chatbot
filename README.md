@@ -1,6 +1,6 @@
 # 🎓 BMSCE FAQ Chatbot - LangChain RAG & PyMuPDF
 
-A minimal, high-performance RAG (Retrieval-Augmented Generation) chatbot for BMS College of Engineering (BMSCE) built with **LangChain**, **PyMuPDF**, **FAISS**, **HuggingFace Embeddings**, **ChatGroq (Llama-3.1)**, and **Streamlit**.
+A minimal, high-performance RAG (Retrieval-Augmented Generation) chatbot for BMS College of Engineering (BMSCE) built with **LangChain**, **PyMuPDF**, **FAISS**, **HuggingFace Embeddings**, **ChatGroq (Qwen 27B)**, and **Streamlit**.
 
 ---
 
@@ -11,7 +11,7 @@ A minimal, high-performance RAG (Retrieval-Augmented Generation) chatbot for BMS
 - **Text Chunking**: Optimized splitting using `RecursiveCharacterTextSplitter`.
 - **FAISS Vector Store**: Fast similarity search using `sentence-transformers/all-MiniLM-L6-v2` embeddings.
 - **Interactive Knowledge Base**: Upload custom PDF/TXT documents via Streamlit sidebar and rebuild vector store on the fly.
-- **Ultra-Fast LLM Inference**: Powered by Groq's `llama-3.1-8b-instant` model.
+- **Ultra-Fast LLM Inference**: Powered by Groq's `qwen3.8-27b` model.
 
 ---
 
@@ -62,6 +62,6 @@ streamlit run app.py
 - **LangChain**
 - **PyMuPDF (fitz)**
 - **FAISS**
-- **Groq API (Llama 3.1 8B)**
+- **Groq API (Qwen 27B)**
 - **Sentence-Transformers**
 - **Streamlit**
